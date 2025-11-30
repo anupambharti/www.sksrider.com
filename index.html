@@ -1,4 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SKSRiders — Rest & Charge for Delivery Workers</title>
+  <meta name="description" content="SKSRiders helps delivery riders find short-term rest and charging shelters nearby. Monthly membership, location, and contact details available." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="brand">SKSRiders</h1>
+      <p class="tagline">Safe short-term shelter & phone charging for delivery riders</p>
+      <nav class="main-nav">
+        <a href="#listings">Shelters</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h2>Find a nearby place to rest and charge</h2>
+        <p>Short-term rest spaces with affordable monthly plans. Click a listing to call or get location details.</p>
+      </div>
+    </section>
+
+    <section id="listings" class="wrap listings">
+      <h3>Available Shelter — Featured</h3>
+
+      <article class="card" itemscope itemtype="https://schema.org/LodgingBusiness">
+        <div class="card-left">
+          <div class="badge">Featured</div>
+          <h4 itemprop="name">Mahanagar Rest & Charge</h4>
+          <p class="location" itemprop="address">Mahanagar</p>
+          <p class="rate"><strong>Monthly:</strong> ₹299</p>
+          <p class="phone"><strong>Phone:</strong> <a href="tel:+919451243097">9451243097</a></p>
+          <p class="hours">Open: 24/7 (short rests allowed)</p>
+          <p class="actions"><a class="btn" href="tel:+919451243097">Call to Book</a> <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Mahanagar" target="_blank" rel="noopener">Open Map</a></p>
+        </div>
+        <div class="card-right">
+          <img alt="Mahanagar Shelter" src="https://via.placeholder.com/400x250?text=Mahanagar+Shelter" />
+        </div>
+        <meta itemprop="telephone" content="+919451243097" />
+        <meta itemprop="priceRange" content="₹299/month" />
+      </article>
+
+      <p class="note">Only one shelter is listed for now. We will add more locations soon.</p>
+    </section>
+
+    <section id="about" class="wrap about">
+      <h3>About SKSRiders</h3>
+      <p>SKSRiders provides safe, affordable temporary shelters for food delivery and other riders to rest, refresh, and charge their devices. We list places with contact details and monthly plans. If you run a shelter and want to list, please contact us.</p>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h3>Contact & Booking</h3>
+      <p>Phone (for bookings & queries): <a href="tel:+919451243097">9451243097</a></p>
+      <p>Email: <a href="mailto:contact@sksriders.example">contact@sksriders.example</a> (placeholder)</p>
+      <form class="contact-form" action="#" onsubmit="alert('Form placeholder — call 9451243097 to book'); return false;">
+        <label>Name <input name="name" required /></label>
+        <label>Phone <input name="phone" required /></label>
+        <label>Message <textarea name="message"></textarea></label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>© SKSRiders — Temporary rest & charge shelters</div>
+      <div class="small">Monthly membership example: ₹299 — Mahanagar</div>
+    </div>
+  </footer>
+
+</body>
+</html><!DOCTYPE html>
 
 <html lang="en-US">
 
