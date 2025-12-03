@@ -1,82 +1,171 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>SKSRiders — Temporary Shelter for Delivery Riders</title>
-	<meta name="description" content="SKSRiders provides short-term rest and charging hubs for delivery riders. Find safe, economical places to rest by location and contact them directly." />
+	<meta name="description"
+		content="SKSRiders provides short-term rest and charging hubs for delivery riders. Find safe, economical places to rest by location and contact them directly." />
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+		rel="stylesheet">
+
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 	<header class="site-header">
-		<div class="wrap">
-			<h1 class="logo">SKSRiders</h1>
-			<p class="tag">Temporary rest & charging hubs for delivery riders</p>
+		<div class="wrap header-inner">
+			<a href="#" class="logo">SKSRiders</a>
+			<nav class="site-nav">
+				<a href="#listings" class="btn-nav">Find a Hub</a>
+			</nav>
 		</div>
 	</header>
 
-	<main class="wrap main">
-		<section class="intro">
-			<h2>Welcome</h2>
-			<p>SKSRiders helps delivery persons find short-term shelter to rest, charge phones, and stay safe. Below is our first listed hub — more will be added soon.</p>
+	<main>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="wrap hero-content">
+				<h1 class="hero-title">Rest, Recharge, <br> <span class="highlight">Ride Safely.</span></h1>
+				<p class="hero-subtitle">Affordable short-term shelter and charging hubs designed exclusively for
+					delivery partners.</p>
+				<div class="hero-actions">
+					<a href="#listings" class="btn primary large">Find a Hub Near You</a>
+					<a href="#about" class="btn secondary large">Learn More</a>
+				</div>
+			</div>
+			<div class="hero-bg"></div>
 		</section>
 
-		<section class="listing" itemscope itemtype="https://schema.org/LodgingBusiness">
-			<h3 class="listing-title" itemprop="name">Mahanagar Rest Hub</h3>
-			<div class="listing-grid">
-				<div class="listing-media">
-					<img alt="Hostel bed" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
-					<img alt="Dorm bed" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+		<!-- Features Section -->
+		<section class="features" id="about">
+			<div class="wrap">
+				<div class="section-header">
+					<h2>Why SKSRiders?</h2>
+					<p>We understand the hustle. That's why we've built spaces that work for you.</p>
 				</div>
-
-				<div class="listing-info">
-					<p class="price" itemprop="priceRange">₹299 <span class="per">/ month</span></p>
-					<p class="location"><strong>Location:</strong> <span itemprop="address">Mahanagar</span></p>
-					<p class="phone"><strong>Phone:</strong> <a href="tel:+917004898286" itemprop="telephone">7004898286</a></p>
-					<p class="maplink"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Mahanagar+India">Open in Google Maps</a></p>
-
-					<div class="actions">
-						<a class="btn primary" href="tel:+917004898286">Call to Book</a>
-						<button class="btn" id="bookBtn">Request Booking</button>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="icon">⚡</div>
+						<h3>Fast Charging</h3>
+						<p>High-speed charging points to keep your device and vehicle ready.</p>
 					</div>
-
-					<form id="bookingForm" class="booking-form" onsubmit="event.preventDefault(); alert('Booking request sent. Please call the number to confirm.');">
-						<label>Name <input type="text" name="name" placeholder="Your name"></label>
-						<label>Phone <input type="tel" name="phone" placeholder="Mobile number"></label>
-						<label>Hours <input type="number" name="hours" min="1" max="24" value="4"> hours</label>
-						<button type="submit" class="btn primary">Send Request</button>
-						<p class="small">This is a simple contact placeholder — please call to confirm availability.</p>
-					</form>
-
+					<div class="feature-card">
+						<div class="icon">🛡️</div>
+						<h3>Safe & Secure</h3>
+						<p>Verified locations with secure parking for your bike.</p>
+					</div>
+					<div class="feature-card">
+						<div class="icon">💰</div>
+						<h3>Affordable</h3>
+						<p>Pay only for the hours you need. No expensive deposits.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="more wrap-note">
-			<h4>About SKSRiders</h4>
-			<p>We are building a network of affordable rest hubs for delivery riders. If you run a space and want to list it, contact us at <a href="mailto:info@sksrider.com">info@sksrider.com</a> or call the number above.</p>
+		<!-- Listings Section -->
+		<section class="listings" id="listings">
+			<div class="wrap">
+				<div class="section-header">
+					<h2>Available Hubs</h2>
+					<p>Check out our top-rated locations.</p>
+				</div>
+
+				<article class="listing-card" itemscope itemtype="https://schema.org/LodgingBusiness">
+					<div class="listing-image">
+						<img alt="Mahanagar Rest Hub Interior"
+							src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1200&auto=format&fit=crop" />
+						<div class="badge">Available Now</div>
+					</div>
+					<div class="listing-content">
+						<div class="listing-header">
+							<h3 class="listing-title" itemprop="name">Mahanagar Rest Hub</h3>
+							<p class="listing-price" itemprop="priceRange">₹299 <span class="per">/ month</span></p>
+						</div>
+						<p class="listing-address"><span class="icon-sm">📍</span> <span itemprop="address">Mahanagar,
+								Lucknow</span></p>
+
+						<div class="listing-features">
+							<span>WiFi</span> • <span>Charging</span> • <span>Water</span> • <span>Rest Area</span>
+						</div>
+
+						<div class="listing-actions">
+							<a class="btn primary full-width" href="tel:+917004898286">Call to Book</a>
+							<button class="btn outline full-width" id="bookBtn">Request Booking</button>
+						</div>
+
+						<form id="bookingForm" class="booking-form"
+							onsubmit="event.preventDefault(); alert('Booking request sent! We will contact you shortly.');">
+							<h4>Request a Slot</h4>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Your Name" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" name="phone" placeholder="Phone Number" required>
+							</div>
+							<div class="form-group">
+								<label>Duration (Hours)</label>
+								<input type="range" name="hours" min="1" max="12" value="4"
+									oninput="this.nextElementSibling.value = this.value + ' hrs'">
+								<output>4 hrs</output>
+							</div>
+							<button type="submit" class="btn primary full-width">Send Request</button>
+						</form>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="cta-banner">
+			<div class="wrap">
+				<h2>Own a space?</h2>
+				<p>Partner with us and help riders in your area while earning extra income.</p>
+				<a href="mailto:info@sksrider.com" class="btn white">Become a Partner</a>
+			</div>
 		</section>
 	</main>
 
 	<footer class="site-footer">
-		<div class="wrap">
-			<small>&copy; SKSRiders — helping riders rest safely | ESTD 2025 </small>
+		<div class="wrap footer-inner">
+			<div class="footer-brand">
+				<span class="logo-text">SKSRiders</span>
+				<p>&copy; 2025 SKSRiders. All rights reserved.</p>
+			</div>
+			<div class="footer-links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="mailto:info@sksrider.com">Contact</a>
+			</div>
 		</div>
 	</footer>
 
 	<script>
-		(function(){
+		(function () {
 			var bookBtn = document.getElementById('bookBtn');
 			var bookingForm = document.getElementById('bookingForm');
-			if(!bookBtn || !bookingForm) return;
-			bookBtn.addEventListener('click', function(){
-				bookingForm.style.display = 'block';
-				bookingForm.scrollIntoView({behavior:'smooth'});
-				var first = bookingForm.querySelector('input[name="name"]');
-				if(first) first.focus();
+			if (!bookBtn || !bookingForm) return;
+
+			bookBtn.addEventListener('click', function () {
+				// Toggle form visibility with a smooth fade/slide effect class if we had one, 
+				// for now just display block and scroll
+				if (bookingForm.style.display === 'block') {
+					bookingForm.style.display = 'none';
+				} else {
+					bookingForm.style.display = 'block';
+					bookingForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+					var first = bookingForm.querySelector('input[name="name"]');
+					if (first) first.focus();
+				}
 			});
 		})();
 	</script>
 </body>
-</html>
 
+</html>
